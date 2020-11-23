@@ -43,7 +43,7 @@ nav ul li{
 }
 
 main{
-    height: 3000px;
+    height: 3212px;
 }
 
 .headingphoto{
@@ -54,7 +54,7 @@ main{
 }
 
 h1{
-    font-size: 48px;
+    font-size: clamp(20px, 3vw, 30px);
     margin-top: 40%;
     margin-left: 5%;
 }
@@ -79,7 +79,7 @@ h1{
     width: 50%;
     height: 500px;
     float: left;
-    margin-top: 2%;
+    margin-top: 20px;
     background-color: red;
 }
 
@@ -87,7 +87,7 @@ h1{
     width: 50%;
     height: 500px;
     float: right;
-    margin-top: 37%;
+    margin-top: 520px;
     background-color: blue;
 }
 
@@ -95,7 +95,7 @@ h1{
     width: 50%;
     height: 500px;
     float: left;
-    margin-top: 35%;
+    margin-top: 500px;
     background-color: green;
 }
 
@@ -103,6 +103,20 @@ h1{
     width: 50%;
     height: 500px;
     float: right;
-    margin-top: 35%;
+    margin-top: 500px;
     background-color: orange;
+}
+
+.footerImage{
+    background-color: cadetblue;
+    height: 500px;
+    width: 100%;
+    margin-top: 2020px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: darkorchid;
 }
