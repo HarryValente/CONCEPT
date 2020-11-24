@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 9999999999;
+    background-color: #f8f0c6;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fffdd1;
+}
+
+header .logo{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    letter-spacing: 2px;margin: 0 15px;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000000;
+    
+}
+
+header.sticky ul li a{
+    font-size: 1.5em;
+}
+
+aside{
+    position: absolute;
+    float: left;
+    width: 220px;
+    height: 2000px;
+    margin-top: 475px;
+    background-color: darkolivegreen;
+    z-index: 99999999;
+}
+
+.container{
+    padding-left: 240px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-rows: repeat(8, 300px);
+    grid-gap: 1em;
+    padding-top: 475px;
+}
+
+.container > div{
+    border: 1px dashed black;
+}
+
+.container > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.one{
+    
+    background-color: mediumorchid;
+}
+
+.two{
+    
+    background-color: greenyellow;
+}
+
+.three{
+    
+    background-color: burlywood;
+}
+
+.four{
+    
+    background-color: chocolate;
+}
+
+.five{
+    
+    background-color: rebeccapurple;
+}
+
+.six{
+    
+    background-color: teal;
+}
+
+.seven{
+    
+    background-color: navy;
+}
+
+.eight{
+    
+    background-color: tomato;
+}
+
+.nine{
+    
+    background-color: whitesmoke;
+}
+
+.ten{
+    
+    background-color: firebrick;
+}
+
+.eleven{
+    
+    background-color: hotpink;
+}
+
+.twelve{
+    
+    background-color: khaki;
+}
+
+.thirteen{
+    
+    background-color: lightseagreen;
+}
+
+.fourteen{
+    
+    background-color: violet;
+}
+
+.fifteen{
+    
+    background-color: mediumslateblue;
+}
+
+.sixteen{
+    
+    background-color: azure;
+}
