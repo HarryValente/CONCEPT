@@ -10,6 +10,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 16vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,13 +23,14 @@ header{
 header.sticky{
     padding: 5px 100px;
     background: #fffdd1;
+    height: 10vh;
 }
 
 header .logo{
     position: relative;
     color: black;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
@@ -63,6 +65,50 @@ header.sticky ul li a{
 
 header.sticky ul li a{
     font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.headlineProduct{
+    width: 100%;
+    height: 500px;
+    margin-top: 119px;
+    
+}
+
+.headlineProduct img{
+    width: 50%;
+}
+
+.headlineTitle{
+    float: right;
+    padding: 17vh 5vw 1% 0;
+    z-index: 99999999999999999999999;
+}
+
+h1{
+    font-size: 2em;
+    
+}
+
+h2{
+    font-size: 1em;
+    
+}
+
+@media screen and (max-width: 930px){
+    .headlineTitle{
+        display: none;
+    } 
+
+    .headlineProduct img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .headlineProduct{
+        display: none;
+    }
 }
 
 aside{
@@ -70,9 +116,10 @@ aside{
     float: left;
     width: 220px;
     height: 2000px;
-    margin-top: 475px;
+    margin-top: 530px;
     background-color: darkolivegreen;
     z-index: 99999999;
+    opacity: 0.5;
 }
 
 .container{
@@ -81,7 +128,7 @@ aside{
     grid-template-columns: repeat(auto-fill, 220px);
     grid-template-rows: repeat(8, 300px);
     grid-gap: 1em;
-    padding-top: 475px;
+    padding-top: 30px;
 }
 
 .container > div{
@@ -94,82 +141,32 @@ aside{
     object-fit: cover;
 }
 
-.one{
-    
-    background-color: mediumorchid;
+.container > div{
+    background-color: peachpuff;
 }
 
-.two{
-    
-    background-color: greenyellow;
+.productImages{
+    width: 100%;
+    height: 75%;
 }
 
-.three{
-    
-    background-color: burlywood;
+@media screen and (max-width: 610px){
+    .container{
+        padding-top: 175px;
+    }
+
+    aside{
+        margin-top: 175px;
+    }
 }
 
-.four{
-    
-    background-color: chocolate;
+
+
+p{
+    padding: 2% 0 0 5%;
 }
 
-.five{
-    
-    background-color: rebeccapurple;
-}
-
-.six{
-    
-    background-color: teal;
-}
-
-.seven{
-    
-    background-color: navy;
-}
-
-.eight{
-    
-    background-color: tomato;
-}
-
-.nine{
-    
-    background-color: whitesmoke;
-}
-
-.ten{
-    
-    background-color: firebrick;
-}
-
-.eleven{
-    
-    background-color: hotpink;
-}
-
-.twelve{
-    
-    background-color: khaki;
-}
-
-.thirteen{
-    
-    background-color: lightseagreen;
-}
-
-.fourteen{
-    
-    background-color: violet;
-}
-
-.fifteen{
-    
-    background-color: mediumslateblue;
-}
-
-.sixteen{
-    
-    background-color: azure;
+.discount{
+    color: red;
+    font-size: 0.8em;
 }
