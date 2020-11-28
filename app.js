@@ -17,15 +17,15 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 })
 
-// calculate height of browser window 
-let height = $(window).height();  
+// // calculate height of browser window 
+// let height = $(window).height();  
 		  
-//makes the content height equal to the browser window height
-$('#content').css ({
-    'height': height + 'px'
-});
+// //makes the content height equal to the browser window height
+// $('#content').css ({
+//     'height': height + 'px'
+// });
