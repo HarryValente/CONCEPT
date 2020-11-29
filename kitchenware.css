@@ -63,11 +63,6 @@ header.sticky ul li a{
     
 }
 
-header.sticky ul li a{
-    font-size: 1.5em;
-    text-decoration: underline;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -208,15 +203,66 @@ h2{
     }
 }
 
-aside{
+.filter{
     position: absolute;
     float: left;
+    font-size: 1.4em;
+    padding-top: 20vh;
+    display: none;
+    cursor: pointer;
+}
+
+aside{
+    position: absolute;
+    display: flex;
+    justify-content: start;
     width: 220px;
     height: 2000px;
-    margin-top: 530px;
+    margin-top: 560px;
     background-color: darkolivegreen;
     z-index: 99999999;
     opacity: 0.5;
+}
+
+@media screen and (max-width: 930px){
+    aside{
+        position: absolute;
+        left: 0px;
+        height: 94vh;
+        top: 9vh;
+        background-color: olivedrab;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30vw;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+}
+
+.filter-links li{
+    opacity: 1;
+}
+
+.filter{
+    display: block;
+}
+
+.filter-active{
+    transform: translateX(0%);
+}
+
+@keyframes filterLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .container{
@@ -225,7 +271,7 @@ aside{
     grid-template-columns: repeat(auto-fill, 220px);
     grid-template-rows: repeat(8, 300px);
     grid-gap: 1em;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .container > div{

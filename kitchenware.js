@@ -29,3 +29,31 @@ const navSlide = () => {
 }
     
 navSlide();
+
+
+const filterSlide = () => {
+    const filter = document.querySelector('.filter');
+    const filtered = document.querySelector('.filter-links');
+    const filterLinks = document.querySelectorAll('.filter-links li');
+    //toggle nav
+
+    filter.addEventListener('click', () => {
+        filtered.classList.toggle('filter-active');
+        
+        //animate links
+
+    filterLinks.forEach((link, index) => {
+        if(link.style.animation) {
+            link.style.animation = ''
+        }     else {
+                link.style.animation = `filterLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`
+        }
+    });
+    //burger animation
+    filter.classList.toggle('toggle');
+
+    });
+    
+}
+    
+filterSlide();
