@@ -222,21 +222,22 @@ aside{
     background-color: darkolivegreen;
     z-index: 99999999;
     opacity: 0.5;
+    left: -220px;
 }
 
-@media screen and (max-width: 930px){
-    aside{
+@media screen and (max-width: 1020px){
+    .aside{
         position: absolute;
-        left: 0px;
+        left: -420px;
         height: 94vh;
-        top: 9vh;
+        top: 16vh;
         background-color: olivedrab;
         border: 2px solid black;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30vw;
+        width: 35vw;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -266,12 +267,14 @@ aside{
 }
 
 .container{
-    padding-left: 240px;
+    /* padding-left: 10%; */
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(auto-fill, 220px);
     grid-template-rows: repeat(8, 300px);
     grid-gap: 1em;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    padding: 60px 2% 0 14%;
 }
 
 .container > div{

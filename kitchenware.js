@@ -33,7 +33,7 @@ navSlide();
 
 const filterSlide = () => {
     const filter = document.querySelector('.filter');
-    const filtered = document.querySelector('.filter-links');
+    const filtered = document.querySelector('.aside');
     const filterLinks = document.querySelectorAll('.filter-links li');
     //toggle nav
 
