@@ -203,12 +203,19 @@ h2{
     }
 }
 
+.asideHeader{
+    font-size: 1.2em;
+    padding: 4vh 10vw 2vh 0;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
 .filter{
     position: sticky;
     font-size: 1.4em;
     top: 25%;
-    padding-left: 4vw;
-    display: none;
+    width: 60px;
+    left: 4vw;
     cursor: pointer;
     z-index: 99999999999;
 }
@@ -216,10 +223,10 @@ h2{
 .aside{
         position: absolute;
         left: 0;
-        height: 94vh;
+        height: 80vh;
         top: 16vh;
         margin-top: 560px;
-        background-color: darkolivegreen;
+        background-color: #f8f0c6;
         opacity: 0.9;
         border: 2px solid black;
         border-radius: 10px;
@@ -229,32 +236,135 @@ h2{
         width: 35vw;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
+        overflow-y: scroll;
+        
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: peachpuff;
 }
 
 .filter-links li{
-    opacity: 1;
     list-style: none;
-    line-height: 80px;
-}
-
-.filter{
-    display: block;
+    line-height: 40px;
+    cursor: pointer;
 }
 
 .filter-active{
     transform: translateX(0%);
 }
 
-@keyframes filterLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
+.circle1{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: black;
+    margin: 10px;
+    cursor: pointer;
 }
+
+ .circle2{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle3{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: navy;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle4{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: green;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle5{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: grey;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle6{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: burlywood;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle7{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: purple;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle8{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: yellow;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.circle9{
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: orange;
+    margin: 10px;
+    cursor: pointer;
+} 
 
 .container{
     /* padding-left: 10%; */
