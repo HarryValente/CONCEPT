@@ -278,7 +278,7 @@ h2{
     cursor: pointer;
 }
 
- .circle2{
+.circle2{
     float: left;
     width: 18px;
     height: 18px;
@@ -406,8 +406,6 @@ h2{
     }
 }
 
-
-
 p{
     padding: 2% 0 0 5%;
 }
@@ -415,4 +413,38 @@ p{
 .discount{
     color: red;
     font-size: 0.8em;
+}
+
+.colourProductContainer{
+    width: 80px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 4%;
+}
+
+.colourProduct1{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: navy;
+}
+
+.colourProduct2{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: green;
+}
+/* FIX */
+.colourProductContainer:hover + .productImages{
+    background-image: url(../images/editionsDrawer.png);
+    border: 5px solid black;
+    background: blue;
+}
+.colourProduct3{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: grey;
 }
