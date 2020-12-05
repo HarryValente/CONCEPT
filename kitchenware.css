@@ -448,3 +448,165 @@ p{
     border-radius: 50%;
     background-color: grey;
 }
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111111;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .containerFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .containerFooter .sec{
+    margin-right: 30px;
+}
+
+footer .containerFooter .sec.aboutus{
+    width: 40%;
+}
+
+footer .containerFooter h2{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .containerFooter h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00000;
+}
+
+footer p{
+    color: #999999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: #f00000;
+}
+
+.sci li a .fa{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #ffffff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span :nth-child(1){
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: #ffffff;
+}
+
+.contact .info li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #ffffff;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999999;
+}
+
+@media (max-width: 991px){
+
+    footer{
+        padding: 40px;
+    }
+
+    footer .containerFooter{
+        flex-direction: column;
+    }
+
+    footer .containerFooter .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .containerFooter .sec.aboutus,.quickLinks,.contact{
+        width: 100%;
+    }
+
+    .copyrightText{
+        padding: 8px 40px;      
+    }
+}
