@@ -1,74 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root{
+     --bg-color: rgba(223, 207, 190, 0.8); /* RGB(223, 207, 190) */
+}
+
 *{
     padding: 0;
     margin: 0;
-    height: auto;
-    margin: auto;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: var(--bg-color);
+}
+
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 25vh;
-    background-color: #f4f4f4;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 9999999999;
+    background-color: #f8f0c6;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fffdd1;
+    height: 10vh;
+}
+
+header .logo{
     position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    letter-spacing: 2px;margin: 0 15px;
+}
+
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.6s;
+}
+
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000000;
+    
 }
 
 nav{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
     position: relative;
-    top: 52%;
-    padding-left: 9%;
-    width: 100%;
+    z-index: 999;
 }
 
-nav ul{
+.nav-links{
     display: flex;
-    align-content: space-around;
-    width: 80%;
-    
+    justify-content: space-around;
 }
 
-nav ul li{
-    display: flex;
-    align-content: space-between;
-    list-style: none;
-    overflow: hidden;
-    margin: 3% 3% 0% 3%;
-    
-}
-
-nav ul li a{
+nav ul li a:hover{
+    color: #ff5757;
     text-decoration: none;
-    color: black;
 }
 
-main{
-    height: 3212px;
+nav ul li a:active{
+    color: #ff5757;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: orange;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1045px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    
+
+    .nav-links{
+        position: absolute;
+        right: -100px;
+        height: 94vh;
+        top: 9vh;
+        background-color: #eeeeee;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40vw;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 .headingphoto{
-    position: absolute;
-    width: 100%;
-    height: 65%;
-    top: 25vh;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    top: 13vh;
     object-fit: cover;
 }
 
 h1{
+    position: relative;
     font-size: clamp(20px, 3vw, 30px);
-    margin-top: 40%;
+    top: 14vh;
     margin-left: 5%;
 }
 
 .swiper-container{
-    width: 80%;
-    height: 600px;
+    position: relative;
+    width: 80vw;
+    height: 60vh;
+    top: 16vh;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .swiper-slide{
     background: #cccccc;
@@ -113,16 +260,164 @@ h1{
     background-color: orange;
 }
 
-.footerImage{
-    background-color: cadetblue;
-    height: 500px;
-    width: 100%;
-    margin-top: 2020px;
-}
-
 footer{
     position: relative;
     width: 100%;
-    height: 200px;
-    background-color: darkorchid;
+    height: auto;
+    padding: 50px 100px;
+    background: #111111;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .containerFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .containerFooter .sec{
+    margin-right: 30px;
+}
+
+footer .containerFooter .sec.aboutus{
+    width: 40%;
+}
+
+footer .containerFooter h2{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .containerFooter h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00000;
+}
+
+footer p{
+    color: #999999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: #f00000;
+}
+
+.sci li a .fa{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #ffffff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span :nth-child(1){
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.contact .info li span{
+    color: #ffffff;
+}
+
+.contact .info li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #ffffff;
+}
+
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999999;
+}
+
+@media (max-width: 991px){
+
+    footer{
+        padding: 40px;
+    }
+
+    footer .containerFooter{
+        flex-direction: column;
+    }
+
+    footer .containerFooter .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .containerFooter .sec.aboutus,.quickLinks,.contact{
+        width: 100%;
+    }
+
+    .copyrightText{
+        padding: 8px 40px;      
+    }
 }
