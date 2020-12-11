@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
-     --bg-color: rgba(223, 207, 190, 0.8); /* RGB(223, 207, 190) */
+     --bg-color: #ffffff; /* RGB(223, 207, 190) rgba(223, 207, 190, 0.8) */
 }
 
 *{
@@ -192,30 +192,13 @@ h1{
     top: 16vh;
 }
 
+.swiper-container:hover{
+    cursor: grab;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.swiper-container:active{
+    cursor: grabbing;
+}
 
 .swiper-slide{
     background: #cccccc;
@@ -225,8 +208,61 @@ h1{
     height: 400px;
     font-size: 50px;
     border: 1px dashed grey;
-    
+    cursor: pointer;
 }
+
+.swiper-slide:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.slider-pic{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-self: flex-start;
+    object-fit: cover;
+}
+
+.productTitle{
+    position: absolute;
+    font-size: 0.5em;
+    left: 2px;
+    top: 305px;
+}
+
+.circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .one{
     width: 50%;
