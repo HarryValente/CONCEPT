@@ -207,7 +207,7 @@ h1{
     align-items: center;
     height: 400px;
     font-size: 50px;
-    border: 1px dashed grey;
+    border: 0.5px solid rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
@@ -230,8 +230,12 @@ h1{
 .productTitle{
     position: absolute;
     font-size: 0.5em;
-    left: 2px;
+    left: 1px;
     top: 305px;
+}
+
+bold{
+    opacity: 0.5;
 }
 
 .circle{
@@ -244,35 +248,11 @@ h1{
     left: 25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .one{
     width: 50%;
     height: 500px;
     float: left;
-    margin-top: 20px;
+    margin-top: 160px;
     background-color: red;
 }
 
@@ -280,7 +260,7 @@ h1{
     width: 50%;
     height: 500px;
     float: right;
-    margin-top: 520px;
+    margin-top: 660px;
     background-color: blue;
 }
 
@@ -288,7 +268,7 @@ h1{
     width: 50%;
     height: 500px;
     float: left;
-    margin-top: 500px;
+    margin-top: 640px;
     background-color: green;
 }
 
@@ -296,7 +276,7 @@ h1{
     width: 50%;
     height: 500px;
     float: right;
-    margin-top: 500px;
+    margin-top: 640px;
     background-color: orange;
 }
 

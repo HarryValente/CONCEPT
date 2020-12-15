@@ -409,17 +409,14 @@ h2{
 }
 /* WHITE PHOTOS GET RID OF THIS IF NOT WHITE KEEP */
 .container > div{
-    border: 1px solid black;
+    border: 0.5px solid rgba(0, 0, 0, 0.16);
+    background-color: rgb(209, 228, 205);
 }
 
 .container > div > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.container > div{
-    background-color: rgb(209, 228, 205);
 }
 
 .productImages{
@@ -447,8 +444,15 @@ h2{
     }
 }
 
+.productTitles{
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1% 0 0 2%;
+}
+
 p{
-    padding: 2% 0 0 5%;
+    padding: 1% 0 0 2%;
 }
 
 .discount{
@@ -461,33 +465,105 @@ p{
     height: 20px;
     display: flex;
     justify-content: space-around;
-    margin: 4%;
+    margin: 1% 4% 4% 4%;
 }
 
-.colourProduct1{
+.colourProductGreen{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.colourProductNavy{
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: navy;
 }
 
-.colourProduct2{
+.colourProductGrey{
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: green;
+    background-color: grey;
 }
+
+.colourProductBrown{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #59361d;
+}
+
+.colourProductCream{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #d4c9b7;
+}
+
+.colourProductWhite{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.colourProductBlack{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.colourProductSilver{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+.colourProductPurple{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.colourProductDuckEgg{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: lightseagreen;
+}
+
+.colourProductOrange{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.colourProductCopper{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #b87333;
+}
+
+.colourProductRed{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+}
+
 /* FIX */
 .colourProductContainer:hover + .productImages{
     background-image: url(../images/editionsDrawer.png);
     border: 5px solid black;
     background: blue;
-}
-.colourProduct3{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: grey;
 }
 
 footer{
@@ -529,7 +605,7 @@ footer .containerFooter h2:before{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00000;
+    background: #fffdd1;
 }
 
 footer p{
@@ -559,7 +635,7 @@ footer p{
 }
 
 .sci li a:hover{
-    background: #f00000;
+    background: #f8f0c6;
 }
 
 .sci li a .fa{
