@@ -56,7 +56,8 @@ header ul{
 header ul li{
     position: relative;
     list-style: none;
-    letter-spacing: 2px;margin: 0 15px;
+    letter-spacing: 2px;
+    margin: 0 15px;
 }
 
 header ul li a{
@@ -268,7 +269,7 @@ bold{
     width: 50%;
     height: 500px;
     float: left;
-    margin-top: 640px;
+    margin-top: 500px;
     background-color: green;
 }
 
@@ -276,7 +277,7 @@ bold{
     width: 50%;
     height: 500px;
     float: right;
-    margin-top: 640px;
+    margin-top: 500px;
     background-color: orange;
 }
 
