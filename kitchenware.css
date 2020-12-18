@@ -569,6 +569,11 @@ h2{
     }
 }
 
+.two a{
+    text-decoration: none;
+    color: #242526;
+}
+
 .productTitles{
     font-size: 12px;
     font-weight: lighter;
@@ -699,6 +704,7 @@ footer{
     background: #111111;
     justify-content: space-around;
     flex-wrap: wrap;
+    bottom: 0;
 }
 
 footer .containerFooter{

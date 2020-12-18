@@ -48,3 +48,21 @@ const filterSlide = () => {
 }
     
 filterSlide();
+
+
+// TESTING HOW TO GET FILTER TO STOP
+// const filter = document.querySelector('.filter')
+// const filterStop = filter.offsetTop
+
+// function fixFilter(){
+//     // Use this to see where on the page is the filter
+//     console.log(filterStop, window.scrollY)
+
+//     // if(window.scrollY >= filterStop){
+
+//     // } else{
+
+//     // }
+// }
+
+// window.addEventListener('scroll', fixFilter)
