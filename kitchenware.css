@@ -37,7 +37,6 @@ nav .wrapper{
     padding: 0px 30px;
     height: 70px;
     line-height: 70px;
-    
     margin: auto;
     display: flex;
     align-items: center;
@@ -633,6 +632,11 @@ p{
     background-color: #d4c9b7;
 }
 
+.colourProductCream:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .colourProductWhite{
     width: 18px;
     height: 18px;
@@ -645,6 +649,11 @@ p{
     height: 18px;
     border-radius: 50%;
     background-color: black;
+}
+
+.colourProductBlack:hover{
+    border: 1px solid pink;
+    cursor: pointer;
 }
 
 .colourProductSilver{
@@ -682,11 +691,21 @@ p{
     background-color: #b87333;
 }
 
+.colourProductCopper:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 .colourProductRed{
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: #f94253;
+}
+
+.colourProductRed:hover{
+    border: 1px solid black;
+    cursor: pointer;
 }
 
 /* FIX */

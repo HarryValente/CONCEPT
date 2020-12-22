@@ -3,14 +3,13 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
-const description = document.querySelector('.description')
+// The description list toggle
+const features = document.querySelector('.fa-chevron-down')
 const description_list = document.querySelector('.Des-list')
+const featuresContent = document.querySelector('.featureDescription')
 
-
-description.addEventListener('click', () => {
+features.addEventListener('click', () => {
     description_list.classList.toggle('active')
+    featuresContent.classList.toggle('active')
+    features.classList.toggle('rotate')
 })
-
-// description.addEventListener('click', () => {
-//     description_list.classList.remove('active')
-// })

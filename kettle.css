@@ -344,10 +344,6 @@ nav input{
   .productAside{
     top: 88vh;
     width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: deeppink;
   }
 
   .product{
@@ -369,8 +365,6 @@ nav input{
 .productSubHeaders{
   padding: 12px 25px;
 }
-
-
 
 .colour-container{
   margin: 12px 25px;
@@ -443,25 +437,61 @@ nav input{
   border-radius: 10px;
 }
 
-.description{
+.featureHead{
+  position: absolute;
+  /* width: 80px; */
+  height: 25px;
+  padding: 10px 25px;
+} 
+
+.fa-chevron-down{
+  position: absolute;
+  right: 15%;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.fa-chevron-down.rotate{
+  transition: 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.featureDescription{
+  position: absolute;
   padding: 12px 25px;
   background-color: #f2f2f2;
   width: 80%;
-  height: 150px;
-  margin: 12px 25px;
+  height: 2px;
+  margin: 32px 25px;
   border-radius: 4px;
   border-top: 3px solid black;
-  transition: 0.3s ease;
+  transition: 1s ease;
+}
+
+.featureDescription.active{
+  height: 250px;
 }
 
 .Des-list{
-  transform: translateY(-200px);
+  transition: 0.3s ease;
   opacity: 0;
+  height: 0;
 }
 
 .Des-list.active{
   transform: translateY(10px);
   opacity: 1;
+  transition: 1s ease;
+  height: 250px;
+}
+
+.weightHead{
+  position: absolute;
+  /* width: 80px; */
+  height: 25px;
+  padding: 40px 25px;
+  
 }
 
 .similar{
@@ -474,19 +504,21 @@ nav input{
 
 .related-container{
   position: relative;
-  width: 80vw;
+  width: 95vw;
   height: 40vh;
   background-color: #f2f2f2;
   margin: auto;
   top: 125vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .related-product{
-  width: 24%;
+  width: 320px;
   height: 100%;
+  margin-top: 10px;
   background-color: darkred;
   border-radius: 4px;
 }
@@ -510,14 +542,76 @@ nav input{
   grid-gap: 1em;
   margin: auto;
   width: 80vw;
-  height: 30vh;
+  height: 42vh;
   top: 145vh;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 169px);
   grid-template-rows: repeat(2, 200px);
 }
 
 .brought-together{
   background-color: chartreuse;
+}
+
+@media (max-width: 1600px){
+  .brought-container{
+    top: 170vh;
+  }
+
+  .frequent{
+    top: 170vh;
+  }
+}
+
+@media (max-width:950px){
+  .similar{
+    color: green;
+    top: 175vh;
+  }
+
+  .related-container{
+    top: 180vh;
+  }
+
+  .frequent{
+    top: 230vh;
+  }
+
+  .brought-container{
+    height: 55vh;
+    top: 230vh;
+  }
+}
+
+@media (max-width: 800px){
+  .frequent{
+    top: 230vh;
+  }
+
+  .brought-container{
+    top: 230vh;
+    
+  }
+}
+
+@media (max-width: 675px){
+  .brought-together:nth-child(odd){
+    display: none;
+  }
+
+  .frequent{
+    top: 310vh;
+  }
+
+  .brought-container{
+    top: 310vh;
+    height: 42vh;
+  }
+}
+
+@media (max-width: 465px){
+  .brought-container{
+    height: 70vh;
+  }
 }
 
 footer{
@@ -528,7 +622,7 @@ footer{
   background: #111111;
   justify-content: space-around;
   flex-wrap: wrap;
-  bottom: -210vh;
+  bottom: -230vh;
 }
 
 footer .containerFooter{
@@ -658,13 +752,14 @@ footer p{
   padding: 8px 100px;
   text-align: center;
   color: #999999;
-  bottom: -215vh;
+  bottom: -235vh;
 }
 
-@media (max-width: 991px){
+@media (max-width: 950px){
 
   footer{
       padding: 40px;
+      bottom: -310vh;
   }
 
   footer .containerFooter{
@@ -681,6 +776,27 @@ footer p{
   }
 
   .copyrightText{
-      padding: 8px 40px;      
+      padding: 8px 40px;  
+      bottom: -315vh;    
+  }
+}
+
+@media (max-width: 675px){
+  footer{
+    bottom: -390vh;
+  }
+
+  .copyrightText{ 
+    bottom: -390vh;    
+}
+} 
+
+@media (max-width: 465px){
+  footer{
+    bottom: -410vh;
+  }
+
+  .copyrightText{ 
+    bottom: -410vh;    
   }
 }
