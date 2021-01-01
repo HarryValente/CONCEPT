@@ -41,6 +41,7 @@ nav .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .wrapper .logo a{
@@ -495,11 +496,13 @@ nav input{
 }
 
 .similar{
-  position: relative;
+  position: absolute;
   color: coral;
   font-size: 24px;
   top: 120vh;
   left: 8vw;
+  width: 190px;
+  height: 20px;
 }
 
 .related-container{
@@ -528,11 +531,13 @@ nav input{
 }
 
 .frequent{
-  position: relative;
+  position: absolute;
   color: coral;
   font-size: 24px;
-  top: 140vh;
+  top: 180vh;
   left: 8vw;
+  width: 350px;
+  height: 20px;
 }
 
 .brought-container{
@@ -552,15 +557,16 @@ nav input{
   background-color: chartreuse;
 }
 
-@media (max-width: 1600px){
+/* @media (max-width: 1600px){
   .brought-container{
     top: 170vh;
   }
 
   .frequent{
     top: 170vh;
+    color: black;
   }
-}
+} */
 
 @media (max-width:950px){
   .similar{

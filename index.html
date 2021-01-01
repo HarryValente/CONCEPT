@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -128,20 +129,38 @@
         </div>
 
 
-        <div class="one">
-
+        <div class="one" data-aos="fade-right">
+            <img src="../images/Tupperware.jpg" width="100%" height="100%">
+            <div class="photoText">
+                <p class="photoHeaderRight">Look after the leftovers</p>
+                <p class="photoTextRight">View our range of Tupperware <a href="#">HERE</a></p>
+            </div>
         </div>
 
-        <div class="two">
+        
 
+        <div class="two" data-aos="fade-left">
+            <img src="../images/healthyGadgets.png" width="100%" height="100%">
+            <div class="photoText">
+                <p class="photoHeaderRight">Healthy heroes</p>
+                <p class="photoTextRight">View our range of Tupperware <a href="#">HERE</a></p>
+            </div>
         </div>
 
-        <div class="three">
-
+        <div class="three" data-aos="fade-right">
+            <img src="../images/Tupperware.jpg" width="100%" height="100%">
+            <div class="photoText">
+                <p class="photoHeaderRight">Look after the leftovers</p>
+                <p class="photoTextRight">View our range of Tupperware <a href="#">HERE</a></p>
+            </div>
         </div>
 
-        <div class="four">
-
+        <div class="four" data-aos="fade-left">
+            <img src="../images/Tupperware.jpg" width="100%" height="100%">
+            <div class="photoText">
+                <p class="photoHeaderRight">Look after the leftovers</p>
+                <p class="photoTextRight">View our range of Tupperware <a href="#">HERE</a></p>
+            </div>
         </div>
         
         <div class="footerImage">
@@ -150,7 +169,7 @@
 
     
 
-    <!-- <footer>
+    <footer>
         <div class="containerFooter">
             <div class="sec aboutus">
                 <h2>About us</h2>
@@ -206,10 +225,17 @@
 
     <div class="copyrightText">
         <p>Copyright © Harry-joeValente. All rights reserved.</p>
-    </div> -->
+    </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1800,
+          once: true
+      });
+    </script>
     <script src="script.js"></script>
     
 </body>
