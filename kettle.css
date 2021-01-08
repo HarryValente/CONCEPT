@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -324,10 +325,19 @@ nav input{
     position: absolute;
     width: 45vw;
     height: 65vh;
-    background-color: #222725;
+    
     top: 30vh;
     margin: 0 3vw;
     object-fit: cover;
+}
+
+
+.blackKettle{
+  
+}
+
+.copperKettle{
+  display: none;
 }
 
 .productAside{
@@ -365,6 +375,18 @@ nav input{
 
 .productSubHeaders{
   padding: 12px 25px;
+}
+
+.ratingContainer{
+  padding: 12px 25px;
+}
+
+.rating.checked{
+  color: #ff9800;
+}
+
+.reviewSubHeader{
+  padding: 0 25px;
 }
 
 .colour-container{
@@ -448,7 +470,7 @@ nav input{
 .fa-chevron-down{
   position: absolute;
   right: 15%;
-  padding: 10px 25px;
+  padding: 12px 25px;
   transition: 0.3s ease;
   cursor: pointer;
 }
@@ -460,7 +482,7 @@ nav input{
 
 .featureDescription{
   position: absolute;
-  padding: 12px 25px;
+  padding: 1px 25px;
   background-color: #f2f2f2;
   width: 80%;
   height: 2px;
@@ -487,13 +509,8 @@ nav input{
   height: 250px;
 }
 
-.weightHead{
-  position: absolute;
-  /* width: 80px; */
-  height: 25px;
-  padding: 40px 25px;
-  
-}
+
+
 
 .similar{
   position: absolute;
@@ -530,31 +547,13 @@ nav input{
   box-shadow: 0 8px 10px rgba(0,0,0,0.3), 0 8px 10px rgba(0,0,0,0.3);
 }
 
-.frequent{
-  position: absolute;
-  color: coral;
-  font-size: 24px;
-  top: 180vh;
-  left: 8vw;
-  width: 350px;
-  height: 20px;
-}
-
-.brought-container{
+.reviews{
   position: relative;
-  display: grid;
-  justify-content: center;
-  grid-gap: 1em;
-  margin: auto;
-  width: 80vw;
-  height: 42vh;
   top: 145vh;
-  grid-template-columns: repeat(auto-fit, 169px);
-  grid-template-rows: repeat(2, 200px);
-}
-
-.brought-together{
-  background-color: chartreuse;
+  width: 90%;
+  height: 300px;
+  background-color: teal;
+  margin: auto;
 }
 
 /* @media (max-width: 1600px){
