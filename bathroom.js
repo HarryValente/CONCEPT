@@ -31,6 +31,7 @@ const navSlide = () => {
 }
 
 
+// Refine and sort scroll up when on mobile
 const filterBtn = document.querySelector('.refineSort')
 const filterPage = document.querySelector('.refinedPage')
 

@@ -362,7 +362,7 @@ h2{
 
 aside{
     position: absolute;
-    width: 20vw;
+    width: 17vw;
     height: auto;
     top: 720px;
     margin: 0 10px;
@@ -419,6 +419,13 @@ aside{
     height: 60px;
     background-color: #111111;
     z-index: 99999999;
+    cursor: pointer;
+}
+
+.refine{
+    text-align: center;
+    color: #ffffff;
+    font: bold;
 }
 
 .refinedPage{
@@ -426,13 +433,33 @@ aside{
     height: 0vh;
     width: 100vw;
     bottom: 4vh;
-    background-color: #b87333;
+    background-color: #EFF6E0;
     z-index: 9999999;
     transition: 0.5s ease-in-out;
 }
 
 .refinedPage.show{
     height: 100vh;
+}
+
+.showed{
+    width: 94vw;
+    height: auto;
+    top: 70px;
+    margin-left: 3vw;
+    background-color: rgba(190, 178, 178, 0.1);
+    border: 1px solid rgba(190, 178, 178, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px, rgba(0, 0, 0, 0.23) 0px 1px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 976px){
+    .showed, .refinedPage, .refineSort{
+        display: none;
+    }
 }
 
 @media (max-width: 975px){
@@ -474,7 +501,12 @@ aside{
     .container{
         padding-top: 200px;
     }
+}
 
+@media screen and (max-width: 975px){
+    .container{
+        padding: 250px 8% 30px 8%;
+    }
 }
 
 @media screen and (min-width: 1945px){
