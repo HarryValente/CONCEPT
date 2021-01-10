@@ -14,6 +14,17 @@ features.addEventListener('click', () => {
     features.classList.toggle('rotate')
 })
 
+// 2nd aside toggle
+const weights = document.querySelector('.num2')
+const weightContent = document.querySelector('.weightDescription')
+const weight_list = document.querySelector('.Wei-list')
+
+weights.addEventListener('click', () => {
+    weight_list.classList.toggle('active')
+    weightContent.classList.toggle('active')
+    weights.classList.toggle('rotate')
+})
+
 // DOESNT WORK AND THERE WAS A CSS FIX
 // When clicking seeReviews the page scrolls 1300px
 // const seeReviews = document.querySelector('.reviewSubHeader')

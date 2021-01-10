@@ -442,14 +442,22 @@ nav input{
 }
 
 .btn{
-  margin: 12px 25px;
+  margin: 12px 15px;
   width: 100px;
   height: 40px;
-  border-radius: 25px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.18);
 }
 
 .btn:focus{
   outline: 0;
+  border: 0;
+  
+}
+
+.btn:active{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .features{
@@ -464,7 +472,7 @@ nav input{
   position: absolute;
   /* width: 80px; */
   height: 25px;
-  padding: 10px 25px;
+  padding: 5px 25px;
 } 
 
 .fa-chevron-down{
@@ -481,7 +489,6 @@ nav input{
 }
 
 .featureDescription{
-  position: absolute;
   padding: 1px 25px;
   background-color: #f2f2f2;
   width: 80%;
@@ -493,7 +500,7 @@ nav input{
 }
 
 .featureDescription.active{
-  height: 250px;
+  height: 260px;
 }
 
 .Des-list{
@@ -508,6 +515,54 @@ nav input{
   transition: 1s ease;
   height: 250px;
 }
+
+.Des-list li{
+  font-size: clamp(0.7em, 2vw, 1em);
+}
+
+.weightHead{
+  position: absolute;
+  /* width: 80px; */
+  height: 25px;
+  padding: 5px 25px;
+} 
+
+.weightDescription{
+  padding: 1px 25px;
+  background-color: #f2f2f2;
+  width: 80%;
+  height: 2px;
+  margin: 62px 25px;
+  border-radius: 4px;
+  border-top: 3px solid black;
+  transition: 1s ease;
+}
+
+.weightDescription.active{
+  height: 260px;
+}
+
+.Wei-list{
+  transition: 0.3s ease;
+  opacity: 0;
+  height: 0;
+}
+
+.Wei-list.active{
+  transform: translateY(10px);
+  opacity: 1;
+  transition: 1s ease;
+  height: 250px;
+}
+
+.Wei-list li{
+  font-size: clamp(0.7em, 2vw, 1em);
+}
+
+
+
+
+
 
 
 
