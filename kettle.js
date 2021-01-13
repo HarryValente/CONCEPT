@@ -3,6 +3,18 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
+// Add to bag button
+const cartBtn = document.querySelector('.cartBtn')
+const spinner = document.querySelector('.fa-spinner')
+const input = document.querySelector('input')
+
+
+cartBtn.addEventListener('click', () => {
+    input.value = ''
+})
+
+
+
 // The description list toggle
 const features = document.querySelector('.fa-chevron-down')
 const description_list = document.querySelector('.Des-list')
@@ -15,12 +27,12 @@ features.addEventListener('click', () => {
 })
 
 // 2nd aside toggle
-const weights = document.querySelector('.num2')
+const weights = document.querySelector('.chevron2')
 const weightContent = document.querySelector('.weightDescription')
-const weight_list = document.querySelector('.Wei-list')
+const weight_table = document.querySelector('table')
 
 weights.addEventListener('click', () => {
-    weight_list.classList.toggle('active')
+    weight_table.classList.toggle('active')
     weightContent.classList.toggle('active')
     weights.classList.toggle('rotate')
 })

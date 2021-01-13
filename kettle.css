@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+body{
+  
+}
+
 nav{
     position: fixed;
     z-index: 9999999;
@@ -348,6 +352,8 @@ nav input{
     overflow-y: scroll;
     right: 0;
     top: 22vh;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     margin: 0 3vw;
 }
 
@@ -405,7 +411,9 @@ nav input{
 }
 
 .colour-container >div:hover{
-  border: 1px solid #3A3B3C;
+  /* border: 1px solid #3A3B3C; */
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1); */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
   border-radius: 10px;
 }
 
@@ -435,37 +443,49 @@ nav input{
   width: 70px;
   height: 40px;
   border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.18);
 }
 
 #quantity:focus{
   outline: 0;
+  border: 0;
 }
 
-.btn{
+#quantity:active{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.cartBtn{
   margin: 12px 15px;
   width: 100px;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid black;
+  border: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.18);
 }
 
-.btn:focus{
+.cartBtn:focus{
   outline: 0;
   border: 0;
-  
 }
 
-.btn:active{
+.cartBtn:active{
   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.fa-spinner{
+  
+  color: red;
 }
 
 .features{
   width: 80%;
   height: 100px;
   margin: 12px 25px;
-  background-color: #e5e5e5;
+  background-color: #F6F2F2;
   border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .featureHead{
@@ -539,33 +559,36 @@ nav input{
 }
 
 .weightDescription.active{
-  height: 260px;
+  height: 120px;
 }
 
-.Wei-list{
-  transition: 0.3s ease;
+table{
+  border-collapse: collapse;
+  width: 100%;
+  transition: 0.6s ease;
   opacity: 0;
   height: 0;
 }
 
-.Wei-list.active{
+table.active{
   transform: translateY(10px);
   opacity: 1;
   transition: 1s ease;
-  height: 250px;
+  height: 90px;
 }
 
-.Wei-list li{
-  font-size: clamp(0.7em, 2vw, 1em);
+td, th{
+  border: 1px solid #dddddd;
+  text-align: center;
 }
 
+th{
+  background-color:  #dddddd;
+}
 
-
-
-
-
-
-
+td{
+  background-color: #eeeeee;
+}
 
 .similar{
   position: absolute;
