@@ -376,7 +376,7 @@ aside{
 
 .asideHeader{
     font-size: 24px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .filter-links li{
@@ -505,7 +505,9 @@ aside{
 
 @media screen and (max-width: 975px){
     .container{
-        padding: 250px 8% 30px 8%;
+        padding: 250px 3% 30px 3%;
+        grid-template-columns: repeat(auto-fill, 160px);
+        grid-template-rows: repeat(6, 240px);
     }
 }
 
@@ -521,14 +523,18 @@ aside{
 }
 
 .productTitles{
-    font-size: 12px;
-    font-weight: lighter;
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
     padding: 1% 0 0 2%;
 }
 
 p{
-    padding: 1% 0 0 2%;
+    padding: 0 3% 0 2%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 9%;
 }
 
 .discount{
@@ -537,11 +543,12 @@ p{
 }
 
 .colourProductContainer{
-    width: 80px;
+    position: relative;
+    width: 40%;
     height: 20px;
     display: flex;
     justify-content: space-around;
-    margin: 1% 4% 4% 4%;
+    margin: -10% 0 0 2%;
 }
 
 .colourProductGreen{
