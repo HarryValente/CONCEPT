@@ -5,14 +5,44 @@ window.addEventListener("scroll", function(){
 
 // Add to bag button
 const cartBtn = document.querySelector('.cartBtn')
-const spinner = document.querySelector('.fa-spinner')
-const input = document.querySelector('input')
+const spinner = document.querySelector('.fas fa-spinner fa-spin')
+const cartCircle = document.querySelector('.cartAmount')
+const cartNum = document.querySelector('.cartNumber')
 
+// Tomorrows notes I'm pretty sure once the innerHTML needs to have the spinner attatched to it but im not sure how start off tomorrow by looking at that
 
 cartBtn.addEventListener('click', () => {
-    input.value = ''
+    // Adds a class so that the circle to the cart
+    cartCircle.classList.add('revealed')
+
+    // Removes the cart text
+    cartBtn.innerHTML = ''
+
+    // Runs the function
+    getInputValue()
+
+    cartBtn.innerHTML = spinner
+
+    Loadingspinner()
 })
 
+// Function to get the value of the input field
+function getInputValue(){
+    // Selecting the input method and get its value
+    let quantity = document.getElementById('quantity').value
+
+    // Adds the quantity of the input into the cart
+    cartNum.innerHTML = quantity
+}
+
+// A function set to a 1sec delay which activates the spinFunc below it
+function Loadingspinner(){
+    setTimeout(spinFunc, 1000)
+}
+
+function spinFunc(){
+    alert('hi')
+}
 
 
 // The description list toggle

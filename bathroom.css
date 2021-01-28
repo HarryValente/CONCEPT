@@ -420,6 +420,7 @@ aside{
     background-color: #111111;
     z-index: 99999999;
     cursor: pointer;
+    
 }
 
 .refine{
@@ -549,6 +550,16 @@ p{
     display: flex;
     justify-content: space-around;
     margin: -10% 0 0 2%;
+}
+
+@media (max-width: 975px){
+   .colourProductContainer{
+    margin: -14% 0 0 3%;
+   }
+   
+   p{
+    margin-top: 5%;
+   }
 }
 
 .colourProductGreen{

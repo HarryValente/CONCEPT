@@ -7,10 +7,6 @@
     scroll-behavior: smooth;
 }
 
-body{
-  
-}
-
 nav{
     position: fixed;
     z-index: 9999999;
@@ -325,11 +321,58 @@ nav input{
     display: none;
 }
 
+.fa-shopping-cart{
+  color: red;
+  font-size: 1.7em;
+  position: absolute;
+  right: 2vw;
+  top: 6vh;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.cartAmount{
+  width: 20px;
+  height: 20px;
+  background-color: skyblue;
+  border-radius: 50%;
+  position: absolute;
+  right: 1vw;
+  top: 5vh;
+  transition: 0.3s ease;
+  opacity: 0;
+  z-index: 9999999;
+}
+
+.cartAmount.revealed{
+  opacity: 1;
+}
+
+.cartNumber{
+  position: absolute;
+  left: 6px;
+  top: -2px;
+}
+
+.bag{
+  position: fixed;
+  background-color: steelblue;
+  overflow-y: auto;
+  width: 300px;
+  height: 300px;
+  z-index: 9999999;
+  right: 1vw;
+  top: 11vh;
+}
+
+.fa-shopping-cart:hover + .bag{
+  background-color: tomato;
+}
+
 .product{
     position: absolute;
     width: 45vw;
     height: 65vh;
-    
     top: 30vh;
     margin: 0 3vw;
     object-fit: cover;
