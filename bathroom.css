@@ -57,6 +57,7 @@ nav .wrapper{
 
 .nav-links li{
     list-style: none;
+    letter-spacing: 2px;
 }
 
 .nav-links li a{
@@ -64,7 +65,7 @@ nav .wrapper{
     color: #121113;
     letter-spacing: 2px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 
     padding: 9px 15px;
     border-radius: 5px;
@@ -364,7 +365,7 @@ aside{
     position: absolute;
     width: 17vw;
     height: auto;
-    top: 720px;
+    top: 83vh;
     margin: 0 10px;
     background-color: rgba(190, 178, 178, 0.1);
     border: 1px solid rgba(190, 178, 178, 0.4);
@@ -420,11 +421,11 @@ aside{
     background-color: #111111;
     z-index: 99999999;
     cursor: pointer;
-    
+    display: flex;
 }
 
 .refine{
-    text-align: center;
+    margin: auto;
     color: #ffffff;
     font: bold;
 }

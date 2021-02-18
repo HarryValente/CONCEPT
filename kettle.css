@@ -357,12 +357,96 @@ nav input{
 .bag{
   position: fixed;
   background-color: steelblue;
-  overflow-y: auto;
+  overflow-y: scroll;
   width: 300px;
-  height: 300px;
+  height: 0px;
+  transition: 0.3s;
   z-index: 9999999;
   right: 1vw;
   top: 11vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bag.visible{
+  height: 300px;
+
+}
+
+.fa-shopping-cart:hover ~ .bag{
+  height: 330px;
+}
+
+.bag:hover{
+  height: 330px;
+}
+
+
+
+/* .picture:hover + .profileTab{
+  visibility: visible;
+  opacity: 1; 
+}
+
+.profileTab:hover{
+  visibility: visible;
+  opacity: 1;
+} */
+
+
+
+
+
+.bag-list{
+  position: relative;
+  width: 90%;
+  background-color: hotpink;
+  margin: 10px;
+}
+
+.bagImg{
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+
+.bagDes{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  right: 0;
+  top: 0;
+  padding: 30px 35px 0 0;
+}
+
+.item-number-bag{
+  position: absolute;
+  width: 45px;
+  height: 25px;
+}
+
+.checkout{
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 10px;
+}
+
+.view-bag{
+  background-color: white;
+  color: black;
+  border: none;
+  margin: 0 10px 10px 10px;
+}
+
+.checkout:focus, .view-bag:focus{
+  outline: none;
+}
+
+.checkout:active, .view-bag:active{
+  transform: scale(0.99);
 }
 
 .fa-shopping-cart:hover + .bag{
@@ -376,11 +460,6 @@ nav input{
     top: 30vh;
     margin: 0 3vw;
     object-fit: cover;
-}
-
-
-.blackKettle{
-  
 }
 
 .copperKettle{
@@ -499,7 +578,7 @@ nav input{
   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.cartBtn{
+.addCartBtn{
   margin: 12px 15px;
   width: 100px;
   height: 40px;
@@ -508,12 +587,12 @@ nav input{
   box-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.18);
 }
 
-.cartBtn:focus{
+.addCartBtn:focus{
   outline: 0;
   border: 0;
 }
 
-.cartBtn:active{
+.addCartBtn:active{
   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
 }
 

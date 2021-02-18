@@ -3,13 +3,23 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
+
+
+
+
+
+
+
+
+
+
 // Add to bag button
-const cartBtn = document.querySelector('.cartBtn')
+const cartBtn = document.querySelector('.addCartBtn')
 const spinner = document.querySelector('.fas fa-spinner fa-spin')
 const cartCircle = document.querySelector('.cartAmount')
 const cartNum = document.querySelector('.cartNumber')
+const bagList = document.querySelector('.bag-items')
 
-// Tomorrows notes I'm pretty sure once the innerHTML needs to have the spinner attatched to it but im not sure how start off tomorrow by looking at that
 
 cartBtn.addEventListener('click', () => {
     // Adds a class so that the circle to the cart
@@ -24,7 +34,27 @@ cartBtn.addEventListener('click', () => {
     cartBtn.innerHTML = spinner
 
     Loadingspinner()
+
+    if(quantity.value > 0){
+        // Create a li
+        const li = document.createElement('li')
+        // Add a class to the li
+        li.className = ('bag-list')
+        // Append new li t the bag unordered list
+        bagList.appendChild(li)
+        // Add content to the new li in the bag
+        bagList.innerHTML = `
+        <img class="bagImg" src="../images/pyramidElectricKettle.jpg" width="100%" height="100%">
+        <ul class="bagDes">
+          <p>Haden kettle</p>
+          <p>Colour: black</p>
+          <p>Quantity: ${quantity.value}</p>
+          <p><strong>Total: £30</strong></p>
+        </ul>
+        `
+    }
 })
+
 
 // Function to get the value of the input field
 function getInputValue(){
@@ -33,6 +63,11 @@ function getInputValue(){
 
     // Adds the quantity of the input into the cart
     cartNum.innerHTML = quantity
+
+}
+
+function addQuantity(){
+
 }
 
 // A function set to a 1sec delay which activates the spinFunc below it
@@ -41,8 +76,25 @@ function Loadingspinner(){
 }
 
 function spinFunc(){
-    alert('hi')
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // The description list toggle
@@ -67,15 +119,9 @@ weights.addEventListener('click', () => {
     weights.classList.toggle('rotate')
 })
 
-// DOESNT WORK AND THERE WAS A CSS FIX
-// When clicking seeReviews the page scrolls 1300px
-// const seeReviews = document.querySelector('.reviewSubHeader')
-// const reviews = document.querySelector('.reviews')
 
-// seeReviews.addEventListener('click', () => window.scrollTo({
-//     reviews, behavior:"smooth"
-// }));
 
+// Changing kettle choices
 const black = document.querySelector('.black')
 const blackKettle = document.querySelector('.blackKettle')
 const copper = document.querySelector('.copper')
