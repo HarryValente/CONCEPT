@@ -2,38 +2,9 @@ let header = document.querySelector("header");
 
 // Adding a window event so when the y axis is greater than 0 it adds .sticky to the header
 window.addEventListener("scroll", function(){
-  
-  header.classList.toggle("sticky", window.scrollY > 0);
+  let nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 0);
 })
-
-const navSlide = () => {
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li');
-
-  //toggle nav
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-      
-  //animate links
-
-  navLinks.forEach((link, index) => {
-    if(link.style.animation) {
-      link.style.animation = ''
-    } else {
-      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`
-    }
-  });
-
-  //burger animation
-  burger.classList.toggle('toggle');
-
-  });
-  
-}
-  
-navSlide();
 
 // Using swiper.js
 var swiper = new Swiper('.swiper-container', {
@@ -82,11 +53,3 @@ var swiper = new Swiper('.swiper-container', {
   
 })
 
-
-// // calculate height of browser window 
-// let height = $(window).height();  
-		  
-// //makes the content height equal to the browser window height
-// $('#content').css ({
-//     'height': height + 'px'
-// });

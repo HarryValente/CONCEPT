@@ -3,66 +3,60 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
-// const navSlide = () => {
-//     const burger = document.querySelector('.burger');
-//     const nav = document.querySelector('.nav-links');
-//     const navLinks = document.querySelectorAll('.nav-links li');
-//     //toggle nav
-
-//     burger.addEventListener('click', () => {
-//         nav.classList.toggle('nav-active');
-        
-//         //animate links
-
-//     navLinks.forEach((link, index) => {
-//         if(link.style.animation) {
-//             link.style.animation = ''
-//         }     else {
-//                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`
-//         }
-//     });
-//     //burger animation
-//     burger.classList.toggle('toggle');
-
-//     });
-    
-// }
-    
-// navSlide();
 
 
-const filterSlide = () => {
-    const filter = document.querySelector('.filter');
-    const filtered = document.querySelector('.aside');
-    
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
     //toggle nav
 
-    filter.addEventListener('click', () => {
-        filtered.classList.toggle('filter-active');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
         
+        //animate links
+
+    navLinks.forEach((link, index) => {
+        if(link.style.animation) {
+            link.style.animation = ''
+        }     else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`
+        }
+    });
     //burger animation
-    filter.classList.toggle('toggle');
+    burger.classList.toggle('toggle');
 
     });
     
 }
-    
-filterSlide();
 
 
-// TESTING HOW TO GET FILTER TO STOP
-// const filter = document.querySelector('.filter')
-// const filterStop = filter.offsetTop
+// Search function
 
-// function fixFilter(){
-//     // Use this to see where on the page is the filter
-//     console.log(filterStop, window.scrollY)
+let products = document.querySelectorAll('.product')
+let search = document.querySelector('.searchFilter')
 
-//     // if(window.scrollY >= filterStop){
+// Listens for the input of the searchbar
+search.addEventListener('input', (e) => searchData(e.target.value))
 
-//     // } else{
+function searchData(searchTerm) {
+    // Loops through each products innerText and if it doesnt contain the letters entered add the class of hide
+    products.forEach(item => {
+        if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())){
+            item.classList.remove('hide')
+        } else{
+            item.classList.add('hide')
+        }
+    })
+}
 
-//     // }
-// }
 
-// window.addEventListener('scroll', fixFilter)
+// Refine and sort scroll up when on mobile
+const filterBtn = document.querySelector('.refineSort')
+const filterPage = document.querySelector('.refinedPage')
+
+filterBtn.addEventListener('click', () => {
+    filterPage.classList.toggle('show')
+})
+
+

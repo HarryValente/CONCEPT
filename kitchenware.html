@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     <link rel="stylesheet" href="kitchenware.css">
     <title>Document</title>
@@ -12,149 +11,73 @@
 <body>
 
         <header>
+                <nav>
+                    <div class="wrapper">
+                        <div class="logo"><a href="index.html"><img src="../images/logo.png"></a></div>
+                      <input type="radio" name="slider" id="menu-btn">
+                      <input type="radio" name="slider" id="close-btn">
+                      <ul class="nav-links">
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                        <li><a href="kitchenware.html">Kitchenware</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li>
+                          <a href="storage.html" class="desktop-item">Storage</a>
+                          <input type="checkbox" id="showDrop">
+                          <label for="showDrop" class="mobile-item">Storage</label>
+                          <ul class="drop-menu">
+                                <li><a href="#">Laundry</a></li>
+                                <li><a href="#">Suitcases</a></li>
+                                <li><a href="#">Organisors</a></li>
+                                <li><a href="#">Bin liners</a></li>
+                          </ul>
+                        </li>
 
-            <nav>
-                <div class="wrapper">
-                  <div class="logo"><a href="index.html">LOGO</a></div>
-                  <input type="radio" name="slider" id="menu-btn">
-                  <input type="radio" name="slider" id="close-btn">
-                  <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                    <li><a href="#">Kitchenware</a></li>
-                    <li>
-                        <a href="bathroom.html" class="desktop-item">Bathroom</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">Bathroom</label>
-                        <div class="mega-box">
-                          <div class="content">
-                            <div class="row">
-                              <img src="../images/sinkOrganisationRack.jpg" alt="Photo">
-                            </div>
-                            <div class="row">
-                              <header><strong>Fittings</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Rails</a></li>
-                                <li><a href="#">Mirrors</a></li>
-                                <li><a href="#">Cabinets</a></li>
-                              </ul>
-                            </div>
-                            <div class="row">
-                              <header><strong>Accessories</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Bath mats</a></li>
-                                <li><a href="#">Plants</a></li>
-                                <li><a href="#">Scales</a></li>
-                                <li><a href="#">Towels</a></li>
-                              </ul>
-                            </div>
-                            <div class="row">
-                              <header><strong>Decorative</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Wallpaper</a></li>
-                                <li><a href="#">Pictures</a></li>
-                                <li><a href="#">Mirrors</a></li>
-                                <li><a href="#">Caddy</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    <li>
-                      <a href="#" class="desktop-item">Storage</a>
-                      <input type="checkbox" id="showDrop">
-                      <label for="showDrop" class="mobile-item">Storage</label>
-                      <ul class="drop-menu">
-                        <li><a href="#">Laundry</a></li>
-                        <li><a href="#">Suitcases</a></li>
-                        <li><a href="#">Organisors</a></li>
-                        <li><a href="#">Bin liners</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#" class="desktop-item">Bedroom</a>
-                      <input type="checkbox" id="showMega">
-                      <label for="showMega" class="mobile-item">Bedroom</label>
-                      <div class="mega-box">
-                        <div class="content">
-                          <div class="row">
-                            <img src="../images/sinkOrganisationRack.jpg" alt="Photo">
-                          </div>
-                          <div class="row">
-                            <header><strong>Bedding</strong></header>
-                            <ul class="mega-links">
-                              <li><a href="#">Duvets</a></li>
-                              <li><a href="#">Headboards</a></li>
-                              <li><a href="#">Throws & blankets</a></li>
-                              <li><a href="#">Cushions</a></li>
-                            </ul>
-                          </div>
-                          <div class="row">
-                            <header><strong>Accessories</strong></header>
-                            <ul class="mega-links">
-                              <li><a href="#">Candles & diffusers</a></li>
-                              <li><a href="#">Plants</a></li>
-                              <li><a href="#">Ornaments</a></li>
-                              <li><a href="#">Alarm clocks</a></li>
-                            </ul>
-                          </div>
-                          <div class="row">
-                            <header><strong>Decorative</strong></header>
-                            <ul class="mega-links">
-                              <li><a href="#">Wallpaper</a></li>
-                              <li><a href="#">Pictures</a></li>
-                              <li><a href="#">Blinds</a></li>
-                              <li><a href="#">Lighting</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                        <a href="#" class="desktop-item">Electricals</a>
-                        <input type="checkbox" id="showMega">
-                        <label for="showMega" class="mobile-item">Electricals</label>
-                        <div class="mega-box">
-                          <div class="content">
-                            <div class="row">
-                              <img src="../images/sinkOrganisationRack.jpg" alt="Photo">
-                            </div>
-                            <div class="row">
-                              <header><strong>Lighting</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Lamps</a></li>
-                                <li><a href="#">Outdoor</a></li>
-                                <li><a href="#">Indoor</a></li>
-                                <li><a href="#">Light bulbs</a></li>
-                              </ul>
-                            </div>
-                            <div class="row">
-                              <header><strong>Appliances</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Kettles</a></li>
-                                <li><a href="#">Toasters</a></li>
-                                <li><a href="#">Microwave</a></li>
-                                <li><a href="#">Television</a></li>
-                              </ul>
-                            </div>
-                            <div class="row">
-                              <header><strong>Decorative</strong></header>
-                              <ul class="mega-links">
-                                <li><a href="#">Wallpaper</a></li>
-                                <li><a href="#">Pictures</a></li>
-                                <li><a href="#">Blinds</a></li>
-                                <li><a href="#">Lighting</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                  </ul>
-                  <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-                </div>
-              </nav>
+                        <li>
+                            <a href="bedroom.html" class="desktop-item">Bedroom</a>
+                                <input type="checkbox" id="showMega">
+                                <label for="showMega" class="mobile-item">Bedroom</label>
+                                <div class="mega-box">
+                                  <div class="content">
+                                    <div class="row">
+                                        <img src="../images/bedroomPic.jpg" alt="Photo">
+                                    </div>
+                                    <div class="row">
+                                      <header><strong>Bedding</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Duvets</a></li>
+                                        <li><a href="#">Headboards</a></li>
+                                        <li><a href="#">Throws & blankets</a></li>
+                                        <li><a href="#">Cushions</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="row">
+                                      <header><strong>Accessories</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Candles & diffusers</a></li>
+                                        <li><a href="#">Plants</a></li>
+                                        <li><a href="#">Ornaments</a></li>
+                                        <li><a href="#">Alarm clocks</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header><strong>Decorative</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Wallpaper</a></li>
+                                        <li><a href="#">Pictures</a></li>
+                                        <li><a href="#">Blinds</a></li>
+                                        <li><a href="#">Lighting</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            <li><a href="electricals.html">Electricals</a></li>
+                        </ul>
+                        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                    </div>
+                </nav>
+           
         </header>
-
-            
 
         <div class="headlineProduct">
             <img src="../images/bambooChopping.png" width="100%" height="100%">
@@ -164,41 +87,64 @@
             </div>
         </div>
 
-        <h1 class="filter">Filter</h1>
+        <aside>
 
-        <aside class="aside">
+                <input type="text" class="searchFilter" placeholder="Search...">
 
-           <h1 class="asideHeader">STYLE</h1> 
-            <ul class="filter-links">
-                <li>BAKING TOOLS</li>
-                <li>LIGHTS</li>
-                <li>TOASTERS</li>
-                <li>MICROWAVES</li>
-                <li>STORAGE</li>
-                <li>BINS</li>
-                <li>GADGETS</li>
-                <li>SAUCEPANS</li>
-                <li>CUTLERY</li>
-            </ul>
+                <h1 class="asideHeader">STYLE</h1> 
+                <ul class="filter-links">
+                    <li>BAKING TOOLS</li>
+                    <li>LIGHTS</li>
+                    <li>TOASTERS</li>
+                    <li>MICROWAVES</li>
+                    <li>STORAGE</li>
+                    <li>BINS</li>
+                    <li>GADGETS</li>
+                    <li>SAUCEPANS</li>
+                    <li>CUTLERY</li>
+                </ul>
 
-           <h1 class="asideHeader">COLOUR</h1> 
-            <ul class="filter-links">
-                <li><div class="circle1"></div>BLACK</li>
-                <li><div class="circle2"></div>WHITE</li>
-                <li><div class="circle3"></div>NAVY</li>
-                <li><div class="circle4"></div>GREEN</li>
-                <li><div class="circle5"></div>GREY</li>
-                <li><div class="circle6"></div>BROWN</li>
-                <li><div class="circle7"></div>PURPLE</li>
-                <li><div class="circle8"></div>YELLOW</li>
-                <li><div class="circle9"></div>ORANGE</li>
-            </ul>
+                <ul class="squares">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                </ul>
+    
+               <h1 class="asideHeader">COLOUR</h1> 
+                <ul class="filter-links">
+                    <li>BLACK</li>
+                    <li>WHITE</li>
+                    <li>NAVY</li>
+                    <li>GREEN</li>
+                    <li>GREY</li>
+                    <li>BROWN</li>
+                    <li>PURPLE</li>
+                    <li>YELLOW</li>
+                    <li>ORANGE</li>
+                </ul>
 
+                <ul class="circles">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                </ul>
         </aside>
 
         <div class="container">
             
-            <div class="one">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/breadBin.jpg" width="100%" height="100%">
                 </div>
@@ -210,12 +156,12 @@
                 </div>
             </div>
 
-            <div class="two"><a href="kettle.html">
+            <div class="product"><a href="kettle.html">
                 <div class="productImages">
                     <img src="../images/pyramidElectricKettle.jpg" class="blackKettle" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Kettle</h1>
-                <p>£13.99</p>  </a>
+                <h1 class="productTitles">Haden kettle</h1>
+                <p>£30</p>  </a>
                 <div class="colourProductContainer">
                     <div class="colourProductBlack"></div>
                     <div class="colourProductCream"></div>
@@ -224,7 +170,7 @@
                 </div>
             </div>
             
-            <div class="three">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/picnicBasket.jpg" width="100%" height="100%">
                 </div>
@@ -235,33 +181,33 @@
                 </div>  
             </div>
 
-            <div class="four">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/roundCasserole.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Shallow round casserole dish</h1>
+                <h1 class="productTitles">Concept pot</h1>
                 <p>£7.49</p>
                 <div class="colourProductContainer">
                     <div class="colourProductNavy"></div>
                 </div>
             </div>
 
-            <div class="five">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/J&J-scales.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Joseph & Joseph scales</h1>
+                <h1 class="productTitles">J&J scales</h1>
                 <p>£14.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductNavy"></div>
                 </div>
             </div>
     
-            <div class="six">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/nonStickFryingPan.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Non-stick frying pan</h1>
+                <h1 class="productTitles">Tefal frying pan</h1>
                 <p>£7.99</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductGreen"></div>
@@ -270,11 +216,11 @@
                 </div>
             </div>
                 
-            <div class="seven">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/Blender.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Blender</h1>
+                <h1 class="productTitles">Tefal blender</h1>
                 <p>£24.99</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductGrey"></div>
@@ -282,33 +228,33 @@
                 </div>      
             </div>
     
-            <div class="eight">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/choppingBoard.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">48cm Chopping board</h1>
+                <h1 class="productTitles">Chopping board</h1>
                 <p>£3.49</p>
                 <div class="colourProductContainer">
                     <div class="colourProductBrown"></div>
                 </div>
             </div>
 
-            <div class="nine">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/nonStickCrepePan.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">24cm non-stick crepe pan</h1>
+                <h1 class="productTitles">24cm Crepe pan</h1>
                 <p>£5.79</p>
                 <div class="colourProductContainer">
                     <div class="colourProductPurple"></div>
                 </div>
             </div>
     
-            <div class="ten">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/casseroleLid.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Round casserole with lid</h1>
+                <h1 class="productTitles">Concept casserole</h1>
                 <p>£8.99</p> 
                 <div class="colourProductContainer">
                     <div class="colourProductGreen"></div>
@@ -317,7 +263,7 @@
                 </div>
             </div>
                 
-            <div class="eleven">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/cuttingBoard.jpg" width="100%" height="100%">
                 </div>
@@ -328,22 +274,22 @@
                 </div>        
             </div>
     
-            <div class="twelve">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/glassDomeCakeStand.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Glass dome with cake stand</h1>
+                <h1 class="productTitles">Glass cake stand</h1>
                 <p>£17.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductBrown"></div>
                 </div>
             </div>
     
-            <div class="thirteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/8knifeSet.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">8 Piece knife block set</h1>
+                <h1 class="productTitles">Tower knife set</h1>
                 <p>£22.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductBlack"></div>
@@ -351,77 +297,77 @@
                 </div>
             </div>
         
-            <div class="fourteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/steakSet.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Steak knife set 4pk</h1>
+                <h1 class="productTitles">Silver steak knives</h1>
                 <p>£5.79</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductSilver"></div>
                 </div>         
             </div>
                     
-            <div class="fifteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/nonStickSkillet.jpg" width="100%" height="100%">
                 </div> 
-                <h1 class="productTitles">24cm Non stick skillet</h1>
+                <h1 class="productTitles">Simplex skillet</h1>
                 <p>£6.99</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductDuckEgg"></div>
                 </div>             
             </div>
         
-            <div class="sixteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/nonStickRectangularTin.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Non stick rectangular tin</h1>
+                <h1 class="productTitles">Rectangular tin</h1>
                 <p>£6.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductSilver"></div>
                 </div>
             </div>
             
-            <div class="seventeen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/nonStickMould.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Non stick mould</h1>
+                <h1 class="productTitles">Serax mould</h1>
                 <p>£11.49</p>
                 <div class="colourProductContainer">
                     <div class="colourProductSilver"></div>
                 </div>
             </div>
 
-            <div class="eighteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/spiceRack.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Standing 6-jar spice rack</h1>
+                <h1 class="productTitles">6-jar spice rack</h1>
                 <p>£9.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductBrown"></div>
                 </div>
             </div>
     
-            <div class="nineteen">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/terracottaTagine.jpg" width="100%" height="100%">
                 </div> 
-                <h1 class="productTitles">Terracotta round tagine</h1> 
+                <h1 class="productTitles">Terracotta tagine</h1> 
                 <p>£11.99</p> 
                 <div class="colourProductContainer">
                     <div class="colourProductOrange"></div>
                 </div>  
             </div>
                 
-            <div class="twenty">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/fourSliceToaster.jpg" width="100%" height="100%">
                 </div> 
-                <h1 class="productTitles">Smeg 50s style toaster</h1> 
+                <h1 class="productTitles">Smeg 50s toaster</h1> 
                 <p>£34.79</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductCream"></div>
@@ -429,11 +375,11 @@
                 </div>     
             </div>
     
-            <div class="twentyone">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/2sliceToaster.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Boston 2 slice toaster</h1>
+                <h1 class="productTitles">Boston toaster</h1>
                 <p>£22.59</p>
                 <div class="colourProductContainer">
                     <div class="colourProductCream"></div>
@@ -442,22 +388,22 @@
                 </div>
             </div>
     
-            <div class="twentytwo">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/1000Wmicrowave.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">1000W Countertop microwave</h1>
+                <h1 class="productTitles">Klasten microwave</h1>
                 <p>£34.99</p>
                 <div class="colourProductContainer">
                     <div class="colourProductGrey"></div>
                 </div>
             </div>
         
-            <div class="twentythree">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/mugSet.jpg" width="100%" height="100%">
                 </div> 
-                <h1 class="productTitles">Ceramic contemporary mugs</h1>
+                <h1 class="productTitles">Ceramic mugs</h1>
                 <p>£2.49</p>  
                 <div class="colourProductContainer">
                     <div class="colourProductBlack"></div>
@@ -465,11 +411,11 @@
                 </div>     
             </div>
                     
-            <div class="twentyfour">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/58litreBin.jpg" width="100%" height="100%">
                 </div> 
-                <h1 class="productTitles">58 Litre motion sensor bin</h1>   
+                <h1 class="productTitles">Motion sensor bin</h1>   
                 <p>£10.99</p> 
                 <div class="colourProductContainer">
                     <div class="colourProductGreen"></div>
@@ -478,17 +424,76 @@
                 </div>       
             </div>
         
-            <div class="twentyfive">
+            <div class="product">
                 <div class="productImages">
                     <img src="../images/espressoCoffeeMachine.jpg" width="100%" height="100%">
                 </div>
-                <h1 class="productTitles">Espresso coffee machine</h1>
+                <h1 class="productTitles">Sage coffee</h1>
                 <p>£49.49</p>
                 <div class="colourProductContainer">
                     <div class="colourProductGrey"></div>
                 </div>
             </div>
 
+        </div>
+
+        <div class="refineSort">
+            <p class="refine">REFINE & SORT</p>
+        </div>
+
+        <div class="refinedPage">
+            <aside class="showed">
+                    <input type="text" class="searchFilter" placeholder="Search...">
+            <h1 class="asideHeader">STYLE</h1> 
+                <ul class="filter-links">
+                    <li>BAKING TOOLS</li>
+                    <li>LIGHTS</li>
+                    <li>TOASTERS</li>
+                    <li>MICROWAVES</li>
+                    <li>STORAGE</li>
+                    <li>BINS</li>
+                    <li>GADGETS</li>
+                    <li>SAUCEPANS</li>
+                    <li>CUTLERY</li>
+                </ul>
+
+                <ul class="squares">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                </ul>
+    
+               <h1 class="asideHeader">COLOUR</h1> 
+                <ul class="filter-links">
+                    <li>BLACK</li>
+                    <li>WHITE</li>
+                    <li>NAVY</li>
+                    <li>GREEN</li>
+                    <li>GREY</li>
+                    <li>BROWN</li>
+                    <li>PURPLE</li>
+                    <li>YELLOW</li>
+                    <li>ORANGE</li>
+                </ul>
+
+                <ul class="circles">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                    <input type="checkbox" class="tick">
+                </ul>
+            </aside>
         </div>
 
         <footer>

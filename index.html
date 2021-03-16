@@ -14,26 +14,72 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">LOGO</a>
+
         <nav>
+                    <div class="wrapper">
+                      <div class="logo"><a href="index.html"><img src="../images/logo.png"></a></div>
+                      <input type="radio" name="slider" id="menu-btn">
+                      <input type="radio" name="slider" id="close-btn">
+                      <ul class="nav-links">
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                        <li><a href="kitchenware.html">Kitchenware</a></li>
+                        <li><a href="bathroom.html">Bathroom</a></li>
+                        <li>
+                          <a href="storage.html" class="desktop-item">Storage</a>
+                          <input type="checkbox" id="showDrop">
+                          <label for="showDrop" class="mobile-item">Storage</label>
+                          <ul class="drop-menu">
+                                <li><a href="#">Laundry</a></li>
+                                <li><a href="#">Suitcases</a></li>
+                                <li><a href="#">Organisors</a></li>
+                                <li><a href="#">Bin liners</a></li>
+                          </ul>
+                        </li>
 
-            <ul class="nav-links">
-                <li><a href="kitchenware.html">KITCHENWARE</a></li>
-
-                
-                <li><a href="storage.html">STORAGE</a></li>
-                <li><a href="bathroom.html">BATHROOM</a></li>
-                <li><a href="bedroom.html">BEDROOM</a></li>
-                <li><a href="electricals.html">ELECTRICALS</a></li>
-            </ul>
-
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-
-        </nav>
+                        <li>
+                            <a href="bedroom.html" class="desktop-item">Bedroom</a>
+                                <input type="checkbox" id="showMega">
+                                <label for="showMega" class="mobile-item">Bedroom</label>
+                                <div class="mega-box">
+                                  <div class="content">
+                                    <div class="row">
+                                        <img src="../images/bedroomPic.jpg" alt="Photo">
+                                    </div>
+                                    <div class="row">
+                                      <header><strong>Bedding</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Duvets</a></li>
+                                        <li><a href="#">Headboards</a></li>
+                                        <li><a href="#">Throws & blankets</a></li>
+                                        <li><a href="#">Cushions</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="row">
+                                      <header><strong>Accessories</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Candles & diffusers</a></li>
+                                        <li><a href="#">Plants</a></li>
+                                        <li><a href="#">Ornaments</a></li>
+                                        <li><a href="#">Alarm clocks</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header><strong>Decorative</strong></header>
+                                      <ul class="mega-links">
+                                        <li><a href="#">Wallpaper</a></li>
+                                        <li><a href="#">Pictures</a></li>
+                                        <li><a href="#">Blinds</a></li>
+                                        <li><a href="#">Lighting</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            <li><a href="electricals.html">Electricals</a></li>
+                        </ul>
+                        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+                    </div>
+                </nav>
     
     </header>
 
@@ -42,7 +88,7 @@
         </div>
 
 
-        <h1>Recommended for you</h1>
+        <h1 class="reccomended">Recommended for you</h1>
               
         <div class="swiper-container">
             
@@ -122,10 +168,11 @@
 
             </div>
             
-            <div class="swiper-pagination"></div>
         
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+
+            <div class="swiper-pagination"></div>
 
         </div>
 
@@ -167,8 +214,6 @@
         <video controls class="videos">
             <source src="../videos/SpiroGo-Compact-Spiralizer.mp4" type="video/mp4">
         </video>
-
-    <!-- autoplay -->
 
         <div class="reassurance">
 

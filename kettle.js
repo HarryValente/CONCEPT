@@ -25,13 +25,8 @@ cartBtn.addEventListener('click', () => {
     // Adds a class so that the circle to the cart
     cartCircle.classList.add('revealed')
 
-    // Removes the cart text
-    cartBtn.innerHTML = ''
-
     // Runs the function
     getInputValue()
-
-    cartBtn.innerHTML = spinner
 
     Loadingspinner()
 
