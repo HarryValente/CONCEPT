@@ -40,8 +40,8 @@ nav .wrapper{
 }
 
 .wrapper .logo img{
-    height: 370px;
-    width: 250px;
+    height: 350px;
+  width: 250px;
 }
 .wrapper .nav-links{
     display: inline-flex;
@@ -348,7 +348,7 @@ h2{
 aside{
     position: absolute;
     width: 17vw;
-    height: auto;
+    height: 880px;
     top: 680px;
     margin: 0 10px;
     background-color: #f3e7d6;
@@ -393,7 +393,7 @@ aside{
     position: absolute;
     height: 340px;
     right: 5%;
-    top: 110px;
+    top: 117px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -406,10 +406,9 @@ aside{
 
 .circles{
     position: absolute;
-    height: 40%;
+    height: 340px;
     right: 5%;
-    bottom: -6px;
-    margin: 20px 0;
+    top: 530px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -752,6 +751,7 @@ footer p{
     width: 40px;
     height: 40px;
     background: #222;
+    color: #8b6554;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -37,9 +37,8 @@ nav .wrapper{
 }
 
 .wrapper .logo img{
-  height: 370px;
+  height: 350px;
   width: 250px;
-  padding-top: 5px;
 }
 
 .wrapper .nav-links{
@@ -156,7 +155,7 @@ nav .wrapper{
 }
 
 .wrapper .btn{
-  color: rgb(255, 0, 0);
+  color: #eeeeee;
   font-size: 20px;
   cursor: pointer;
   display: none;
@@ -308,8 +307,8 @@ nav input{
   color: #EFF6E0;
   font-size: 1.7em;
   position: relative;
-  left: 87vw;
-  bottom: 6vh;
+  left: 99%;
+  top: -65px;
   cursor: pointer;
   z-index: 9999999;
 }
@@ -320,8 +319,8 @@ nav input{
   background-color: skyblue;
   border-radius: 50%;
   position: relative;
-  left: 89vw;
-  bottom: 11vh;
+  left: 102%;
+  top: -110px;
   transition: 0.3s ease;
   opacity: 0;
   z-index: 9999999;
@@ -563,10 +562,6 @@ nav input{
   box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.fa-spinner{
-  color: red;
-}
-
 .features{
   width: 80%;
   height: 100px;
@@ -726,13 +721,141 @@ td{
   top: 145vh;
   width: 90%;
   height: 300px;
-  background-color: teal;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.review-ratings{
+  width: 400px;
+  height: 100%;
+  max-height: 300px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.2s;
+  background-color: #fafafa;
+}
+
+.review-ratings:hover{
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.progressbar-container{
+  width: 50%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progressbar {
+  background-color: black;
+  width: 100%;
+  border-radius: 13px;
+  padding: 3px;
+}
+
+.progressbar>div {
+  background-color: #ff9800;
+  width: 76%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.progressbar:nth-child(2)>div {
+  background-color: #ff9800;
+  width: 89%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.progressbar:nth-child(3)>div {
+  background-color: #ff9800;
+  width: 44%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.progressbar:nth-child(4)>div {
+  background-color: #ff9800;
+  width: 23%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.progressbar:nth-child(5)>div {
+  background-color: #ff9800;
+  width: 10%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.customer-reviews{
+  width: 700px;
+  height: 100%;
+  max-height: 300px;
+  background-color: #fafafa;
+  overflow-y: scroll;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.people{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.people:hover{
+  background-color: #f0f0f0;
+}
+
+.people h1{
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.people p{
+  font-size: 12px;
+  width: 250px;
+}
+
+.people img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width:1280px){
+  .reviews{
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
 }
 
 @media (max-width: 1430px){
   .reviews{
     top: 170vh;
+  }
+}
+
+@media (max-width: 750px){
+  .review-ratings{
+    width: 300px;
+  }
+
+  .customer-reviews{
+    width: 400px;
   }
 }
 
@@ -857,6 +980,7 @@ footer p{
   width: 40px;
   height: 40px;
   background: #222;
+  color: #8b6554;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -941,7 +1065,7 @@ footer p{
 
   footer{
       padding: 40px;
-      bottom: -310vh;
+      bottom: -370vh;
   }
 
   footer .containerFooter{
@@ -959,7 +1083,7 @@ footer p{
 
   .copyrightText{
       padding: 8px 40px;  
-      bottom: -315vh;    
+      bottom: -370vh;    
   }
 }
 
@@ -989,10 +1113,10 @@ footer p{
   }
 
   footer{
-    bottom: -375vh;
+    bottom: -475vh;
   }
 
   .copyrightText{ 
-    bottom: -375vh;    
+    bottom: -475vh;    
   }
 }

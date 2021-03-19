@@ -3,16 +3,6 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
-
-
-
-
-
-
-
-
-
 // Add to bag button
 const cartBtn = document.querySelector('.addCartBtn')
 const spinner = document.querySelector('.fas fa-spinner fa-spin')
@@ -27,8 +17,6 @@ cartBtn.addEventListener('click', () => {
 
     // Runs the function
     getInputValue()
-
-    Loadingspinner()
 
     if(quantity.value > 0){
         // Create a li
@@ -50,7 +38,6 @@ cartBtn.addEventListener('click', () => {
     }
 })
 
-
 // Function to get the value of the input field
 function getInputValue(){
     // Selecting the input method and get its value
@@ -58,39 +45,7 @@ function getInputValue(){
 
     // Adds the quantity of the input into the cart
     cartNum.innerHTML = quantity
-
 }
-
-function addQuantity(){
-
-}
-
-// A function set to a 1sec delay which activates the spinFunc below it
-function Loadingspinner(){
-    setTimeout(spinFunc, 1000)
-}
-
-function spinFunc(){
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // The description list toggle
 const features = document.querySelector('.fa-chevron-down')
@@ -130,7 +85,6 @@ black.addEventListener('click', () => {
     } else{
         blackKettle.display = 'none'
     }
-
 })
 
 copper.addEventListener('click', () => {
