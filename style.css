@@ -19,7 +19,7 @@ body{
 nav{
     position: fixed;
     z-index: 9999999;
-    width: 100%;
+    width: 100vw;
     top: 0;
     height: 150px;
     transition: 0.6s;
@@ -29,8 +29,9 @@ nav{
 
 nav.sticky{
     padding: 5px 100px;
-    height: 10vh;
+    height: 11vh;
     background-color: #8b6554;
+    width: 100%;
 }
 
 nav .wrapper{
@@ -46,8 +47,13 @@ nav .wrapper{
 }
 
 .wrapper .logo img{
-    height: 350px;
-    width: 250px;
+    height: 80px;
+    width: 130px;
+    transition: 0.3s;
+}
+
+nav.sticky .wrapper .logo img{
+    margin-top: 15px;
 }
 
 .wrapper .nav-links{
@@ -63,7 +69,7 @@ nav .wrapper{
     color: #f2f2f2;
     letter-spacing: 2px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     padding: 9px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -347,6 +353,7 @@ nav input{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 300px !important;
     height: 400px;
     font-size: 50px;
     border: 0.5px solid rgba(0, 0, 0, 0.16);
@@ -377,21 +384,15 @@ nav input{
     padding-bottom: 50px;
 }
 
-.productTitle{
-    position: absolute;
-    font-size: 0.5em;
-    left: 10px;
-    top: 305px;
+.swiper-pagination:focus{
+    outline: none;
 }
 
-.circle{
+.productTitle{
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: lightcoral;
-    bottom: 25px;
-    left: 25px;
+    font-size: 0.4em;
+    left: 10px;
+    top: 305px;
 }
 
 .one{
@@ -426,6 +427,7 @@ nav input{
 }
 
 .photoTextRight{
+    text-align: center;
     font-weight: 100;
 }
 
@@ -479,6 +481,20 @@ nav input{
     min-width: 450px;
     max-width: 50%;
     object-fit: cover;
+}
+
+@media (max-width:470px){
+
+    .photoHeaderRight{
+        font-size: 22px;
+        
+    }
+
+    .photoTextRight{
+        font-size: 10px;
+        
+    }
+
 }
 
 .videos{
@@ -649,7 +665,7 @@ footer p{
     padding: 8px 100px;
     text-align: center;
     color: #999999;
-    top: 4800px;
+    top: 4780px;
 }
 
 @media (max-width: 991px){
@@ -724,6 +740,6 @@ footer p{
     }
 
     .copyrightText{
-        top: 7050px;      
+        top: 7200px;      
     }
 }
